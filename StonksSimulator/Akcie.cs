@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -12,9 +13,15 @@ namespace StonksSimulator
 {
     public partial class Akcie : UserControl
     {
-        double porizovaciCena;
+        public bool cheatmode = false;
+
+        int nahoda;
+
+        public double porizovaciCena;
         public double ZmenaCeny => porizovaciCena / 10;
         List<double> historieCen = new List<double>();
+
+        public Action<Akcie> delete;
 
         public double aktualniCena;
         public bool jeVPlusu => AktualniCena > porizovaciCena;
@@ -31,7 +38,7 @@ namespace StonksSimulator
             }
         }
 
-        public string AktualniCenaText => $"{Math.Pow(aktualniCena,porizovaciCena)}$";
+        public string AktualniCenaText => $"{aktualniCena}$";
         private Akcie()
         {
             InitializeComponent();
@@ -41,6 +48,8 @@ namespace StonksSimulator
         {
             this.porizovaciCena = porizovaciCena;
             this.AktualniCena = porizovaciCena;
+          
+
         }
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
@@ -76,7 +85,11 @@ namespace StonksSimulator
 
         private void ZmenaTrhu()
         {
-            int nahoda = Random.Shared.Next(100);
+            nahoda = 100;
+            if (!cheatmode)
+            {
+                nahoda = Random.Shared.Next(100);
+            } 
             if (nahoda > 60)
             {
                 AktualniCena += ZmenaCeny;
@@ -88,7 +101,6 @@ namespace StonksSimulator
             else
             {
                 AktualniCena -= ZmenaCeny;
-
             }
         }
 
@@ -99,7 +111,7 @@ namespace StonksSimulator
 
         private void ProdejAkcie()
         {
-
+            delete.Invoke(this);
         }
     }
 }

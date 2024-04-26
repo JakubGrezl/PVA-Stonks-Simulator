@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "f1dBShWWZjw0QtH6d9YVyM/c83vfmnm3LFoH8x2UUB/War/8aV/Gj9W74vfmmI7Ar8TyTYmtLWr7P9qb/d6+hg==",
+  "dgSpecHash": "SESI5RGE5k8TVk4kAPFUbX7VS8rZYpkcfd3GJoqu5cVMF1VadlufpS1bcOj0r48j4rHzgysHhLHfQ+nueJ6OhQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\verne\\source\\repos\\StonksSimulator\\StonksSimulator\\StonksSimulator.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\jakub\\Documents\\GitHub\\PVA-Stonks-Simulator\\StonksSimulator\\StonksSimulator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jakub\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\jakub\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\jakub\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\jakub\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StonksSimulator
-build_property.ProjectDir = C:\Users\verne\source\repos\StonksSimulator\StonksSimulator\
+build_property.ProjectDir = C:\Users\jakub\Documents\GitHub\PVA-Stonks-Simulator\StonksSimulator\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

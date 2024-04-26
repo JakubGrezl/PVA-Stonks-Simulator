@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\verne\\source\\repos\\StonksSimulator\\StonksSimulator\\StonksSimulator.csproj": {}
+    "C:\\Users\\jakub\\Documents\\GitHub\\PVA-Stonks-Simulator\\StonksSimulator\\StonksSimulator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\verne\\source\\repos\\StonksSimulator\\StonksSimulator\\StonksSimulator.csproj": {
+    "C:\\Users\\jakub\\Documents\\GitHub\\PVA-Stonks-Simulator\\StonksSimulator\\StonksSimulator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\verne\\source\\repos\\StonksSimulator\\StonksSimulator\\StonksSimulator.csproj",
+        "projectUniqueName": "C:\\Users\\jakub\\Documents\\GitHub\\PVA-Stonks-Simulator\\StonksSimulator\\StonksSimulator.csproj",
         "projectName": "StonksSimulator",
-        "projectPath": "C:\\Users\\verne\\source\\repos\\StonksSimulator\\StonksSimulator\\StonksSimulator.csproj",
-        "packagesPath": "C:\\Users\\verne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\verne\\source\\repos\\StonksSimulator\\StonksSimulator\\obj\\",
+        "projectPath": "C:\\Users\\jakub\\Documents\\GitHub\\PVA-Stonks-Simulator\\StonksSimulator\\StonksSimulator.csproj",
+        "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jakub\\Documents\\GitHub\\PVA-Stonks-Simulator\\StonksSimulator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\verne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jakub\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,6 +55,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

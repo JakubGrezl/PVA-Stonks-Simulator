@@ -32,6 +32,7 @@ namespace StonksSimulator
             numericUpDown1 = new NumericUpDown();
             flowLayoutPanel1 = new FlowLayoutPanel();
             label1 = new Label();
+            cheatmodeBox = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
             // 
@@ -69,11 +70,23 @@ namespace StonksSimulator
             label1.Text = "Peníze: 5$";
             label1.TextAlign = ContentAlignment.MiddleRight;
             // 
+            // cheatmodeBox
+            // 
+            cheatmodeBox.AutoSize = true;
+            cheatmodeBox.Location = new Point(17, 385);
+            cheatmodeBox.Name = "cheatmodeBox";
+            cheatmodeBox.Size = new Size(89, 19);
+            cheatmodeBox.TabIndex = 4;
+            cheatmodeBox.Text = "cheat mode";
+            cheatmodeBox.UseVisualStyleBackColor = true;
+            cheatmodeBox.CheckedChanged += cheatmodeBox_CheckedChanged;
+            // 
             // StonksForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(791, 450);
+            Controls.Add(cheatmodeBox);
             Controls.Add(label1);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(numericUpDown1);
@@ -82,6 +95,7 @@ namespace StonksSimulator
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -90,5 +104,6 @@ namespace StonksSimulator
         private NumericUpDown numericUpDown1;
         private FlowLayoutPanel flowLayoutPanel1;
         private Label label1;
+        private CheckBox cheatmodeBox;
     }
 }
